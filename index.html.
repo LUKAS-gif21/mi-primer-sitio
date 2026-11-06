@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Mundo Digital</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #101020;
+            color: white;
+        }
+
+        header {
+            background: #191932;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #a78bfa;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        .inicio {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: radial-gradient(circle, #30245c, #101020 70%);
+        }
+
+        .inicio h1 {
+            font-size: clamp(35px, 7vw, 60px);
+            margin-bottom: 20px;
+        }
+
+        .inicio h1 span {
+            color: #a78bfa;
+        }
+
+        .inicio p {
+            max-width: 600px;
+            color: #ccccdd;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: #8b5cf6;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .boton:hover {
+            background: #6d28d9;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #a78bfa;
+        }
+
+        section p {
+            color: #ccccdd;
+            line-height: 1.7;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .tarjeta {
+            background: #1c1c38;
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            border: 1px solid #34345a;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+            border-color: #a78bfa;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 15px;
+            color: #c4b5fd;
+        }
+
+        .tarjeta .icono {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #191932;
+            text-align: center;
+            padding: 25px;
+            color: #ccccdd;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Mi Mundo Digital 🚀</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#servicios">Contenido</a>
+        </nav>
+    </header>
+
+    <div class="inicio" id="inicio">
+        <h1>Bienvenido a <span>Mi Mundo Digital</span></h1>
+
+        <p>
+            Explora nuevas ideas, descubre la tecnología
+            y conoce todo lo que puedes crear en el mundo digital.
+        </p>
+
+        <a href="#sobre" class="boton">Descubrir más</a>
+    </div>
+
+    <section id="sobre">
+        <h2>Sobre este sitio</h2>
+
+        <p>
+            Este espacio fue creado para compartir conocimientos,
+            creatividad e innovación. Aquí podrás descubrir
+            nuevas ideas y aprender cosas interesantes.
+        </p>
+    </section>
+
+    <section id="servicios">
+        <h2>Explora nuestro contenido</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <div class="icono">💻</div>
+                <h3>Programación</h3>
+                <p>Aprende cómo funcionan los sitios web y descubre el mundo del código.</p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🤖</div>
+                <h3>Tecnología</h3>
+                <p>Conoce las nuevas herramientas tecnológicas y sus posibilidades.</p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🚀</div>
+                <h3>Creatividad</h3>
+                <p>Convierte tus ideas en proyectos increíbles y originales.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mi Mundo Digital | Creado con HTML y CSS ❤️</p>
+    </footer>
+
+    <script>
+        console.log("¡Bienvenido a mi página web!");
+
+    </script>
+
+</body>
+</html>
